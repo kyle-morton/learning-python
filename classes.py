@@ -1,10 +1,12 @@
+import random
+
 class Product(object):
     price: float
     name: str
     id: int
 
     def __init__(self):
-        self.price = 250
+        self.price = random.randint(1, 500)
         self.name = 'Xbox One'
         self.id = 1
 
@@ -25,7 +27,7 @@ class InheritedProduct(Product):
     description: str
 
     def __init__(self): 
-        self.price = 250
+        self.price = random.randint(1, 400)
         self.name = 'Playstation 4'
         self.id = 2
         self.description = 'PS4 Gaming System'
